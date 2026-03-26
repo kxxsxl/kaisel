@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Current promotions, discounts, and coffee subscription plans at Bean Boutique.">
+  <title>Special Offers | Bean Boutique</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="Images/icon.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="nav scrolled" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <img src="Images/icon.jpg" alt="Bean Boutique logo" class="nav-logo-image">
+          <span class="nav-logo-text">Bean Boutique</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="coffee.html" class="nav-link">Coffee</a>
+          <a href="equipment.html" class="nav-link">Equipment</a>
+          <a href="events.html" class="nav-link">Events</a>
+          <a href="offers.html" class="nav-link active">Offers</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="cart.html" class="cart-btn" aria-label="Shopping Cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count" id="cart-count">0</span>
+          </a>
+          <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="coffee.html" class="mobile-nav-link">Coffee Selection</a>
+      <a href="equipment.html" class="mobile-nav-link">Brewing Equipment</a>
+      <a href="events.html" class="mobile-nav-link">Events & Workshops</a>
+      <a href="offers.html" class="mobile-nav-link">Special Offers</a>
+      <a href="cart.html" class="mobile-nav-link">Shopping Cart</a>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header-content fade-in">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Special Offers</span>
+        </div>
+        <h1>Offers & Subscriptions</h1>
+        <p class="lead">Save on your favorite coffees and never run out with our flexible subscription plans.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="section">
+    <div class="container">
+
+      <!-- Promotional Banner -->
+      <div class="offer-banner fade-in">
+        <div class="offer-banner-content">
+          <span class="label">Limited Time</span>
+          <h2>Spring Brewing Sale</h2>
+          <p class="offer-banner-text">Get 20% off all brewing equipment this month. Use code at checkout.</p>
+          <div class="offer-code">SPRINGBREW20</div>
+        </div>
+      </div>
+
+      <!-- Subscription Plans -->
+      <div class="section-header fade-in">
+        <span class="label">Coffee Club</span>
+        <h2>Monthly Subscriptions</h2>
+        <p>Choose the perfect plan for your coffee needs. Skip or cancel anytime.</p>
+      </div>
+
+      <div class="grid grid-3 plans-grid">
+        <!-- Plan 1: Explorer -->
+        <div class="plan-card fade-in stagger-1">
+          <h3 class="plan-name">Explorer</h3>
+          <div class="plan-price">
+            <span class="amount">$18</span>
+            <span class="period">/ month</span>
+          </div>
+          <p class="plan-description">Perfect for casual coffee drinkers</p>
+          <div class="plan-features">
+            <div class="plan-feature">
+              <i class="fas fa-check check-icon"></i>
+              <span>1 bag (12oz) per month</span>
+            </div>
+            <div class="plan-feature">
+              <i class="fas fa-check check-icon"></i>
+              <span>Curated seasonal selections</span>
+            </div>
+            <div class="plan-feature">
+              <i class="fas fa-check check-icon"></i>
+              <span>Free shipping</span>
+            </div>
+            <div class="plan-feature">
+              <i class="fas fa-check check-icon"></i>
+              <span>5% off additional purchases</span>
+            </div>
+          </div>
+          <button class="btn btn-secondary btn-block">Select Plan</button>
+        </div>
+
+        <!-- Plan 2: Enthusiast (Featured) -->
+        <div class="plan-card featured fade-in stagger-2">
+          <span class="plan-badge">Most Popular</span>
+          <h3 class="plan-name">Enthusiast</h3>
+          <div class="plan-price">
+            <span class="amount">$32</span>
+            <span class="period">/ month</span>
+          </div>
+          <p class="plan-description">For daily coffee lovers</p>
+          <div class="plan-features">
+            <div class="plan-feature">
+              <i class="fas fa-check check-icon"></i>
+              <span>2 bags (24oz) per month</span>
+            </div>
+            <div class="plan-feature">
+              <i class="fas fa-check check-icon"></i>
+              <span>Choose your roast profile</span>
+            </div>
+            <div class="plan-feature">
+              <i class="fas fa-check check-icon"></i>
+              <span>Free shipping</span>
+            </div>
+            <div class="plan-feature">
+              <i class="fas fa-check check-icon"></i>
+              <span>10% off additional purchases</span>
+            </div>
+            <div class="plan-feature">
+              <i class="fas fa-check check-icon"></i>
+              <span>Exclusive member events</span>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block">Select Plan</button>
+        </div>
+
+        <!-- Plan 3: Connoisseur -->
+        <div class="plan-card fade-in stagger-3">
+          <h3 class="plan-name">Connoisseur</h3>
+          <div class="plan-price">
+            <span class="amount">$55</span>
+            <span class="period">/ month</span>
+          </div>
+          <p class="plan-description">For true coffee connoisseurs</p>
+          <div class="plan-features">
+            <div class="plan-feature">
+              <i class="fas fa-check check-icon"></i>
+              <span>4 bags (48oz) per month</span>
+            </div>
+            <div class="plan-feature">
+              <i class="fas fa-check check-icon"></i>
+              <span>Full menu access</span>
+            </div>
+            <div class="plan-feature">
+              <i class="fas fa-check check-icon"></i>
+              <span>Free expedited shipping</span>
+            </div>
+            <div class="plan-feature">
+              <i class="fas fa-check check-icon"></i>
+              <span>15% off additional purchases</span>
+            </div>
+            <div class="plan-feature">
+              <i class="fas fa-check check-icon"></i>
+              <span>Rare micro-lot access</span>
+            </div>
+            <div class="plan-feature">
+              <i class="fas fa-check check-icon"></i>
+              <span>Free brewing equipment</span>
+            </div>
+          </div>
+          <button class="btn btn-secondary btn-block">Select Plan</button>
+        </div>
+      </div>
+
+      <!-- Current Promotions -->
+      <div class="section-header fade-in">
+        <span class="label">Deals</span>
+        <h2>Current Promotions</h2>
+      </div>
+
+      <div class="grid grid-2">
+        <!-- Promo 1: Starter Kit Bundle -->
+        <div class="feature-card promo-card fade-in stagger-1">
+          <span class="label promo-label">Bundle & Save</span>
+          <h3 class="promo-title">Starter Kit Bundle</h3>
+          <p class="promo-description">Get a French Press, Burr Grinder, and 2 bags of coffee for a special price.</p>
+          <div class="promo-footer">
+            <div>
+              <span class="price-original">$280</span>
+              <span class="price-sale">$219</span>
+            </div>
+            <button class="btn btn-primary" onclick="addBundleToCart()">Shop Bundle</button>
+          </div>
+        </div>
+
+        <!-- Promo 2: Refer a Friend -->
+        <div class="feature-card promo-card fade-in stagger-2">
+          <span class="label promo-label">Refer a Friend</span>
+          <h3 class="promo-title">Give $10, Get $10</h3>
+          <p class="promo-description">Share your love for coffee. When your friend makes their first purchase, you both
+            save.</p>
+          <div class="promo-footer">
+            <span class="text-muted">Unlimited referrals</span>
+            <button class="btn btn-secondary" id="copy-link-btn">Copy Referral Link</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="Images/icon.jpg" alt="Bean Boutique logo" class="nav-logo-image">
+            <span class="nav-logo-text">Bean Boutique</span>
+          </a>
+          <p>Crafting exceptional coffee experiences since 2015. Every bean tells a story of quality, sustainability,
+            and passion.</p>
+          <div class="social-links social-links-spacing">
+            <!-- Instagram -->
+            <div class="social-link">
+              <a href="https://www.instagram.com" class="fab fa-instagram"></a>
+            </div>
+            <!-- Twitter/X -->
+            <div class="social-link">
+              <a href="https://www.twitter.com" class="fab fa-twitter"></a>
+            </div>
+            <!-- Facebook -->
+            <div class="social-link">
+              <a href="https://www.facebook.com" class="fab fa-facebook"></a>
+            </div>
+            <!-- YouTube -->
+            <div class="social-link">
+              <a href="https://www.youtube.com" class="fab fa-youtube"></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="coffee.html" class="footer-link">Coffee Selection</a>
+            <a href="equipment.html" class="footer-link">Brewing Equipment</a>
+            <a href="events.html" class="footer-link">Events & Workshops</a>
+            <a href="offers.html" class="footer-link">Special Offers</a>
+          </div>
+        </div>
+
+        <!-- Support -->
+        <div>
+          <h4 class="footer-title">Support</h4>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Shipping Info</a>
+            <a href="#" class="footer-link">Returns Policy</a>
+            <a href="#" class="footer-link">FAQ</a>
+            <a href="#" class="footer-link">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="footer-title">Contact</h4>
+          <div class="footer-links">
+            <span class="footer-link">U Wisara Rd</span>
+            <span class="footer-link">Yangon, Myanmar</span>
+            <span class="footer-link">(+95) 9444555614</span>
+            <a href="mailto:hello@beanboutique.com" class="footer-link">hello@beanboutique.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>2026 Bean Boutique. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

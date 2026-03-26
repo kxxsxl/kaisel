@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Join our coffee workshops and events. Learn brewing techniques, cupping sessions, and more at Bean Boutique.">
+  <title>Events & Workshops | Bean Boutique</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="Images/icon.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="nav scrolled" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <img src="Images/icon.jpg" alt="Bean Boutique logo" class="nav-logo-image">
+          <span class="nav-logo-text">Bean Boutique</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="coffee.html" class="nav-link">Coffee</a>
+          <a href="equipment.html" class="nav-link">Equipment</a>
+          <a href="events.html" class="nav-link active">Events</a>
+          <a href="offers.html" class="nav-link">Offers</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="cart.html" class="cart-btn" aria-label="Shopping Cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count" id="cart-count">0</span>
+          </a>
+          <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="coffee.html" class="mobile-nav-link">Coffee Selection</a>
+      <a href="equipment.html" class="mobile-nav-link active">Brewing Equipment</a>
+      <a href="events.html" class="mobile-nav-link">Events & Workshops</a>
+      <a href="offers.html" class="mobile-nav-link">Special Offers</a>
+      <a href="cart.html" class="mobile-nav-link">Shopping Cart</a>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header-content fade-in">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Events & Workshops</span>
+        </div>
+        <h1>Events & Workshops</h1>
+        <p class="lead">Deepen your coffee knowledge with our expert-led workshops. From brewing fundamentals to
+          advanced techniques, there's something for every coffee lover.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="section">
+    <div class="container">
+      <!-- Events Grid -->
+      <div class="events-container">
+
+        <!-- Event 1 -->
+        <article class="event-card fade-in stagger-1">
+          <div class="event-image">
+            <img src="Images/barista.jpg" alt="Barista Basics Workshop">
+          </div>
+          <div class="event-content">
+            <div class="event-date">
+              <i class="fas fa-calendar-alt calendar-icon"></i>
+              June 15, 2026
+            </div>
+            <h3 class="event-title">Barista Basics: Home Brewing Mastery</h3>
+            <p class="event-description">Learn the fundamentals of brewing great coffee at home. We'll cover grind size,
+              water temperature, brew ratios, and techniques for pour-over, French press, and AeroPress. Perfect for
+              beginners!</p>
+            <div class="event-meta">
+              <div class="event-meta-item">
+                <i class="fas fa-clock clock-icon"></i>
+                <span>10:00 AM - 12:00 PM</span>
+              </div>
+              <div class="event-meta-item">
+                <i class="fas fa-user user-icon"></i>
+                <span>12 spots remaining</span>
+              </div>
+              <div class="event-meta-item">
+                <i class="fas fa-dollar-sign dollar-icon"></i>
+                <span>$45 per person</span>
+              </div>
+            </div>
+            <a href="#register" class="btn btn-primary">Register Now</a>
+          </div>
+        </article>
+
+        <!-- Event 2 -->
+        <article class="event-card fade-in stagger-2">
+          <div class="event-image">
+            <img src="Images/cupping.jpg" alt="Coffee Cupping Session">
+          </div>
+          <div class="event-content">
+            <div class="event-date">
+              <i class="fas fa-calendar-alt calendar-icon"></i>
+              June 22, 2026
+            </div>
+            <h3 class="event-title">Coffee Cupping: Exploring Origins</h3>
+            <p class="event-description">Develop your palate and learn professional cupping techniques. We'll taste
+              coffees from 5 different regions and explore how terroir influences flavor profiles.</p>
+            <div class="event-meta">
+              <div class="event-meta-item">
+                <i class="fas fa-clock clock-icon"></i>
+                <span>2:00 PM - 4:00 PM</span>
+              </div>
+              <div class="event-meta-item">
+                <i class="fas fa-user user-icon"></i>
+                <span>3 spots remaining</span>
+              </div>
+              <div class="event-meta-item">
+                <i class="fas fa-dollar-sign dollar-icon"></i>
+                <span>$35 per person</span>
+              </div>
+            </div>
+            <a href="#register" class="btn btn-primary">Register Now</a>
+          </div>
+        </article>
+
+        <!-- Event 3 -->
+        <article class="event-card fade-in stagger-3">
+          <div class="event-image">
+            <img src="Images/latteart.jpg" alt="Latte Art Workshop">
+          </div>
+          <div class="event-content">
+            <div class="event-date">
+              <i class="fas fa-calendar-alt calendar-icon"></i>
+              May 5, 2026
+            </div>
+            <h3 class="event-title">Latte Art Masterclass</h3>
+            <p class="event-description">Master the art of pouring beautiful lattes. This hands-on workshop covers milk
+              steaming techniques and pouring patterns including hearts, rosettas, and tulips.</p>
+            <div class="event-meta">
+              <div class="event-meta-item">
+                <i class="fas fa-clock clock-icon"></i>
+                <span>11:00 AM - 1:00 PM</span>
+              </div>
+              <div class="event-meta-item">
+                <i class="fas fa-user user-icon"></i>
+                <span>6 spots remaining</span>
+              </div>
+              <div class="event-meta-item">
+                <i class="fas fa-dollar-sign dollar-icon"></i>
+                <span>$60 per person</span>
+              </div>
+            </div>
+            <a href="#register" class="btn btn-primary">Register Now</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Registration Form Section -->
+      <div class="grid grid-2 registration-layout" id="register">
+
+        <!-- Form -->
+        <div class="fade-in-left">
+          <div class="section-header-left">
+            <span class="label">Sign Up</span>
+            <h2>Register for an Event</h2>
+            <p>Reserve your spot for one of our upcoming workshops. We'll send you a confirmation email with all the
+              details.</p>
+          </div>
+
+          <form id="event-registration-form" class="registration-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" id="firstName" class="form-input" placeholder="Peter" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" id="lastName" class="form-input" placeholder="Parker" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" class="form-input" placeholder="peter@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="event" class="form-label">Select Event</label>
+              <select id="event" class="form-select" required>
+                <option value="" disabled selected>Choose a workshop...</option>
+                <option value="barista-basics">March 15 - Barista Basics ($45)</option>
+                <option value="cupping">March 22 - Coffee Cupping ($35)</option>
+                <option value="latte-art">April 5 - Latte Art ($60)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="notes" class="form-label">Special Requirements (Optional)</label>
+              <textarea id="notes" class="form-textarea"
+                placeholder="Any dietary restrictions or accessibility needs?"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+              Complete Registration
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- Info Card -->
+        <div class="feature-card info-card fade-in-right">
+          <h3 class="info-card-title">Workshop Information</h3>
+
+          <div class="info-card-grid">
+            <!-- Location -->
+            <div class="info-card-row">
+              <div class="info-icon-box">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="info-card-content">
+                <h4>Location</h4>
+                <p>Bean Boutique Roastery<br>U Wisara Rd, Yangon</p>
+              </div>
+            </div>
+
+            <!-- Schedule -->
+            <div class="info-card-row">
+              <div class="info-icon-box">
+                <i class="fas fa-calendar-alt"></i>
+              </div>
+              <div class="info-card-content">
+                <h4>Schedule</h4>
+                <p>Weekend workshops<br>Duration: 2 hours</p>
+              </div>
+            </div>
+
+            <!-- Included -->
+            <div class="info-card-row">
+              <div class="info-icon-box">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="info-card-content">
+                <h4>What's Included</h4>
+                <p>All equipment provided<br>Free coffee samples</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-card-footer">
+            <p>Need help? Contact us at <a href="mailto:events@beanboutique.com">events@beanboutique.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="Images/icon.jpg" alt="Bean Boutique logo" class="nav-logo-image">
+            <span class="nav-logo-text">Bean Boutique</span>
+          </a>
+          <p>Crafting exceptional coffee experiences since 2015. Every bean tells a story of quality, sustainability,
+            and passion.</p>
+          <div class="social-links social-links-spacing">
+            <div class="social-link">
+              <a href="https://www.instagram.com" class="fab fa-instagram"></a>
+            </div>
+            <div class="social-link">
+              <a href="https://www.twitter.com" class="fab fa-twitter"></a>
+            </div>
+            <div class="social-link">
+              <a href="https://www.facebook.com" class="fab fa-facebook"></a>
+            </div>
+            <div class="social-link">
+              <a href="https://www.youtube.com" class="fab fa-youtube"></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="coffee.html" class="footer-link">Coffee Selection</a>
+            <a href="equipment.html" class="footer-link">Brewing Equipment</a>
+            <a href="events.html" class="footer-link">Events & Workshops</a>
+            <a href="offers.html" class="footer-link">Special Offers</a>
+          </div>
+        </div>
+
+        <!-- Support -->
+        <div>
+          <h4 class="footer-title">Support</h4>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Shipping Info</a>
+            <a href="#" class="footer-link">Returns Policy</a>
+            <a href="#" class="footer-link">FAQ</a>
+            <a href="#" class="footer-link">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="footer-title">Contact</h4>
+          <div class="footer-links">
+            <span class="footer-link">U Wisara Rd</span>
+            <span class="footer-link">Yangon, Myanmar</span>
+            <span class="footer-link">(+95) 9444555614</span>
+            <a href="mailto:hello@beanboutique.com" class="footer-link">hello@beanboutique.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>2026 Bean Boutique. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

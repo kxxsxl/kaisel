@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Professional brewing equipment for the perfect cup. Espresso machines, French presses, pour-over kits, and grinders.">
+  <title>Brewing Equipment | Bean Boutique</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="nav scrolled" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <img src="Images/icon.jpg" alt="Bean Boutique logo" class="nav-logo-image">
+          <span class="nav-logo-text">Bean Boutique</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="coffee.html" class="nav-link">Coffee</a>
+          <a href="equipment.html" class="nav-link active">Equipment</a>
+          <a href="events.html" class="nav-link">Events</a>
+          <a href="offers.html" class="nav-link">Offers</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="cart.html" class="cart-btn" aria-label="Shopping Cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count" id="cart-count">0</span>
+          </a>
+          <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="coffee.html" class="mobile-nav-link">Coffee Selection</a>
+      <a href="equipment.html" class="mobile-nav-link active">Brewing Equipment</a>
+      <a href="events.html" class="mobile-nav-link">Events & Workshops</a>
+      <a href="offers.html" class="mobile-nav-link">Special Offers</a>
+      <a href="cart.html" class="mobile-nav-link">Shopping Cart</a>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header-content fade-in">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Brewing Equipment</span>
+        </div>
+        <h1>Brewing Equipment</h1>
+        <p class="lead">Professional-grade equipment to elevate your home brewing experience. From espresso machines to
+          manual brewers, we have everything you need.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="section">
+    <div class="container">
+
+      <!-- Search and Filter -->
+      <div class="fade-in">
+        <div class="search-container">
+          <input type="text" class="search-input" id="equipment-search"
+            placeholder="Search equipment by name or type...">
+          <button class="search-btn" aria-label="Search">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+
+        <div class="filter-pills">
+          <button class="filter-pill active" data-filter="all">All Equipment</button>
+          <button class="filter-pill" data-filter="espresso">Espresso</button>
+          <button class="filter-pill" data-filter="manual">Manual Brewing</button>
+          <button class="filter-pill" data-filter="grinder">Grinders</button>
+          <button class="filter-pill" data-filter="accessories">Accessories</button>
+        </div>
+      </div>
+
+      <!-- Equipment Grid -->
+      <div class="grid grid-3" id="equipment-grid">
+
+        <!-- Equipment 1: Espresso Machine -->
+        <article class="product-card fade-in stagger-1" data-category="espresso"
+          data-name="Barista Pro Espresso Machine">
+          <div class="product-image">
+            <img src="Images/espressomachine.jpg" alt="Pro Espresso Machine">
+            <span class="product-badge">Popular</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Espresso Machines</span>
+            <h3 class="product-name">Barista Pro Espresso Machine</h3>
+            <p class="product-description">Semi-automatic espresso machine with 15-bar pressure, built-in grinder, and
+              steam wand. Perfect for home baristas.</p>
+            <div class="equipment-tips">
+              <p class="equipment-tips-title">Usage Tips</p>
+              <ul>
+                <li>Pre-heat the portafilter before brewing</li>
+                <li>Use freshly ground beans for best results</li>
+                <li>Clean steam wand after each use</li>
+              </ul>
+            </div>
+            <div class="product-meta">
+              <span class="product-price">$599.00</span>
+              <button class="add-to-cart" data-id="equip-1" data-name="Barista Pro Espresso Machine" data-price="599.00"
+                data-type="equipment" aria-label="Add to cart">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Equipment 2: French Press -->
+        <article class="product-card fade-in stagger-2" data-category="manual" data-name="Copper French Press">
+          <div class="product-image">
+            <img src="Images/frenchpress.jpg" alt="French Press">
+          </div>
+          <div class="product-content">
+            <span class="product-category">Manual Brewing</span>
+            <h3 class="product-name">Copper French Press</h3>
+            <p class="product-description">Elegant 34oz copper French press with double-wall insulation. Keeps coffee
+              hot for up to 60 minutes.</p>
+            <div class="equipment-tips">
+              <p class="equipment-tips-title">Usage Tips</p>
+              <ul>
+                <li>Use coarse ground coffee to avoid sediment</li>
+                <li>Steep for 4 minutes for optimal extraction</li>
+                <li>Stir gently before pressing</li>
+              </ul>
+            </div>
+            <div class="product-meta">
+              <span class="product-price">$65.00</span>
+              <button class="add-to-cart" data-id="equip-2" data-name="Copper French Press" data-price="65.00"
+                data-type="equipment" aria-label="Add to cart">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Equipment 3: Pour-Over Set -->
+        <article class="product-card fade-in stagger-3" data-category="manual" data-name="Ceramic Pour-Over Kit">
+          <div class="product-image">
+            <img src="Images/kit.jpg" alt="Pour-Over Coffee Set">
+            <span class="product-badge">New</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Manual Brewing</span>
+            <h3 class="product-name">Ceramic Pour-Over Kit</h3>
+            <p class="product-description">Complete pour-over set including ceramic dripper, carafe, and measuring
+              scoop. Designed for optimal extraction.</p>
+            <div class="equipment-tips">
+              <p class="equipment-tips-title">Usage Tips</p>
+              <ul>
+                <li>Bloom grounds with 2x water weight for 30 seconds</li>
+                <li>Pour in slow, concentric circles</li>
+                <li>Use water at 195-205°F</li>
+              </ul>
+            </div>
+            <div class="product-meta">
+              <span class="product-price">$48.00</span>
+              <button class="add-to-cart" data-id="equip-3" data-name="Ceramic Pour-Over Kit" data-price="48.00"
+                data-type="equipment" aria-label="Add to cart">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Equipment 4: Coffee Grinder -->
+        <article class="product-card fade-in stagger-4" data-category="grinder" data-name="Precision Burr Grinder">
+          <div class="product-image">
+            <img src="Images/grinder.jpg" alt="Burr Coffee Grinder">
+          </div>
+          <div class="product-content">
+            <span class="product-category">Grinders</span>
+            <h3 class="product-name">Precision Burr Grinder</h3>
+            <p class="product-description">Conical burr grinder with 40 grind settings. From espresso-fine to French
+              press-coarse, get the perfect grind every time.</p>
+            <div class="equipment-tips">
+              <p class="equipment-tips-title">Usage Tips</p>
+              <ul>
+                <li>Clean burrs monthly with grinder pellets</li>
+                <li>Adjust grind size for brewing method</li>
+                <li>Grind only what you need for freshness</li>
+              </ul>
+            </div>
+            <div class="product-meta">
+              <span class="product-price">$149.00</span>
+              <button class="add-to-cart" data-id="equip-4" data-name="Precision Burr Grinder" data-price="149.00"
+                data-type="equipment" aria-label="Add to cart">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Equipment 5: AeroPress -->
+        <article class="product-card fade-in stagger-5" data-category="manual" data-name="AeroPress Bundle">
+          <div class="product-image">
+            <img src="Images/aeropress.jpg" alt="AeroPress Coffee Maker">
+          </div>
+          <div class="product-content">
+            <span class="product-category">Manual Brewing</span>
+            <h3 class="product-name">AeroPress Bundle</h3>
+            <p class="product-description">Versatile immersion brewer with paper filters and stirrer. Makes smooth, rich
+              coffee in under 2 minutes.</p>
+            <div class="equipment-tips">
+              <p class="equipment-tips-title">Usage Tips</p>
+              <ul>
+                <li>Experiment with inverted method</li>
+                <li>Use fine-medium grind for best results</li>
+                <li>Press slowly for even extraction</li>
+              </ul>
+            </div>
+            <div class="product-meta">
+              <span class="product-price">$35.00</span>
+              <button class="add-to-cart" data-id="equip-5" data-name="AeroPress Bundle" data-price="35.00"
+                data-type="equipment" aria-label="Add to cart">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Equipment 6: Gooseneck Kettle -->
+        <article class="product-card fade-in stagger-1" data-category="accessories" data-name="Variable Temp Kettle">
+          <div class="product-image">
+            <img src="Images/kettle.png" alt="Gooseneck Electric Kettle">
+          </div>
+          <div class="product-content">
+            <span class="product-category">Accessories</span>
+            <h3 class="product-name">Variable Temp Kettle</h3>
+            <p class="product-description">Electric gooseneck kettle with precise temperature control. Perfect for
+              pour-over, tea, and more.</p>
+            <div class="equipment-tips">
+              <p class="equipment-tips-title">Usage Tips</p>
+              <ul>
+                <li>Set temperature based on brew method</li>
+                <li>Pour slowly for even saturation</li>
+                <li>Use hold function to maintain temp</li>
+              </ul>
+            </div>
+            <div class="product-meta">
+              <span class="product-price">$89.00</span>
+              <button class="add-to-cart" data-id="equip-6" data-name="Variable Temp Kettle" data-price="89.00"
+                data-type="equipment" aria-label="Add to cart">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Equipment 7: Hand Grinder -->
+        <article class="product-card fade-in stagger-2" data-category="grinder" data-name="Portable Hand Grinder">
+          <div class="product-image">
+            <img src="Images/portable.jpg" alt="Hand Grinder">
+          </div>
+          <div class="product-content">
+            <span class="product-category">Grinders</span>
+            <h3 class="product-name">Portable Hand Grinder</h3>
+            <p class="product-description">Ceramic burr manual grinder. Perfect for travel or camping.</p>
+            <div class="equipment-tips">
+              <p class="equipment-tips-title">Usage Tips</p>
+              <ul>
+                <li>Adjust grind by turning knob</li>
+                <li>Grind slowly for consistency</li>
+              </ul>
+            </div>
+            <div class="product-meta">
+              <span class="product-price">$45.00</span>
+              <button class="add-to-cart" data-id="equip-7" data-name="Portable Hand Grinder" data-price="45.00"
+                data-type="equipment" aria-label="Add to cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Equipment 8: Digital Scale -->
+        <article class="product-card fade-in stagger-3" data-category="accessories" data-name="Digital Brewing Scale">
+          <div class="product-image">
+            <img src="Images/digitalscale.jpg" alt="Digital Scale">
+          </div>
+          <div class="product-content">
+            <span class="product-category">Accessories</span>
+            <h3 class="product-name">Digital Brewing Scale</h3>
+            <p class="product-description">Waterproof scale with built-in timer for precise brewing.</p>
+            <div class="equipment-tips">
+              <p class="equipment-tips-title">Usage Tips</p>
+              <ul>
+                <li>Use tare function</li>
+                <li>Monitor pour rate</li>
+              </ul>
+            </div>
+            <div class="product-meta">
+              <span class="product-price">$39.00</span>
+              <button class="add-to-cart" data-id="equip-8" data-name="Digital Brewing Scale" data-price="39.00"
+                data-type="equipment" aria-label="Add to cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Equipment 9: Moka Pot -->
+        <article class="product-card fade-in stagger-5" data-category="manual" data-name="Classic Moka Pot">
+          <div class="product-image">
+            <img src="Images/mocha.jpg" alt="Moka Pot">
+          </div>
+          <div class="product-content">
+            <span class="product-category">Manual Brewing</span>
+            <h3 class="product-name">Classic Moka Pot</h3>
+            <p class="product-description">Stovetop espresso maker. Rich, strong coffee in minutes.</p>
+            <div class="equipment-tips">
+              <p class="equipment-tips-title">Usage Tips</p>
+              <ul>
+                <li>Use low heat</li>
+                <li>Remove from heat before sputtering ends</li>
+              </ul>
+            </div>
+            <div class="product-meta">
+              <span class="product-price">$40.00</span>
+              <button class="add-to-cart" data-id="equip-9" data-name="Classic Moka Pot" data-price="40.00"
+                data-type="equipment" aria-label="Add to cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Equipment 10: Tamper -->
+        <article class="product-card fade-in stagger-1" data-category="accessories" data-name="Calibrated Tamper">
+          <div class="product-image">
+            <img src="Images/tamper.jpg" alt="Tamper">
+          </div>
+          <div class="product-content">
+            <span class="product-category">Accessories</span>
+            <h3 class="product-name">Calibrated Tamper</h3>
+            <p class="product-description">58mm tamper with spring calibration for consistent pressure.</p>
+            <div class="equipment-tips">
+              <p class="equipment-tips-title">Usage Tips</p>
+              <ul>
+                <li>Apply 30lbs pressure</li>
+                <li>Keep level</li>
+              </ul>
+            </div>
+            <div class="product-meta">
+              <span class="product-price">$58.00</span>
+              <button class="add-to-cart" data-id="equip-10" data-name="Calibrated Tamper" data-price="58.00"
+                data-type="equipment" aria-label="Add to cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Equipment 11: Milk Frother -->
+        <article class="product-card fade-in stagger-2" data-category="accessories" data-name="Electric Milk Frother">
+          <div class="product-image">
+            <img src="Images/frother.jpg" alt="Milk Frother">
+          </div>
+          <div class="product-content">
+            <span class="product-category">Accessories</span>
+            <h3 class="product-name">Electric Milk Frother</h3>
+            <p class="product-description">Handheld frother for lattes and cappuccinos. USB rechargeable.</p>
+            <div class="equipment-tips">
+              <p class="equipment-tips-title">Usage Tips</p>
+              <ul>
+                <li>Heat milk first</li>
+                <li>Froth at an angle</li>
+              </ul>
+            </div>
+            <div class="product-meta">
+              <span class="product-price">$19.00</span>
+              <button class="add-to-cart" data-id="equip-11" data-name="Electric Milk Frother" data-price="19.00"
+                data-type="equipment" aria-label="Add to cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Equipment 12: Coffee Canister -->
+        <article class="product-card fade-in stagger-3" data-category="accessories" data-name="Vacuum Coffee Canister">
+          <div class="product-image">
+            <img src="Images/canister.jpg" alt="Coffee Canister">
+          </div>
+          <div class="product-content">
+            <span class="product-category">Accessories</span>
+            <h3 class="product-name">Vacuum Coffee Canister</h3>
+            <p class="product-description">Airtight stainless steel container. Keeps beans fresh for weeks.</p>
+            <div class="equipment-tips">
+              <p class="equipment-tips-title">Usage Tips</p>
+              <ul>
+                <li>Pump air out daily</li>
+                <li>Store in cool dark place</li>
+              </ul>
+            </div>
+            <div class="product-meta">
+              <span class="product-price">$75.00</span>
+              <button class="add-to-cart" data-id="equip-12" data-name="Vacuum Coffee Canister" data-price="75.00"
+                data-type="equipment" aria-label="Add to cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Equipment 13: Cleaning Kit -->
+        <article class="product-card fade-in stagger-4" data-category="accessories" data-name="Espresso Cleaning Kit">
+          <div class="product-image">
+            <img src="Images/espressocleaningkit.jpg" alt="Cleaning Kit">
+          </div>
+          <div class="product-content">
+            <span class="product-category">Accessories</span>
+            <h3 class="product-name">Espresso Cleaning Kit</h3>
+            <p class="product-description">Includes group head brush, blind filter, and cleaning tablets.</p>
+            <div class="equipment-tips">
+              <p class="equipment-tips-title">Usage Tips</p>
+              <ul>
+                <li>Clean machine weekly</li>
+                <li>Backflush regularly</li>
+              </ul>
+            </div>
+            <div class="product-meta">
+              <span class="product-price">$28.00</span>
+              <button class="add-to-cart" data-id="equip-13" data-name="Espresso Cleaning Kit" data-price="28.00"
+                data-type="equipment" aria-label="Add to cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Equipment 14: Drip Machine -->
+        <article class="product-card fade-in stagger-5" data-category="espresso" data-name="Automatic Drip Machine">
+          <div class="product-image">
+            <img src="Images/drip.jpg" alt="Drip Machine">
+          </div>
+          <div class="product-content">
+            <span class="product-category">Espresso Machines</span>
+            <h3 class="product-name">Automatic Drip Machine</h3>
+            <p class="product-description">12-cup programmable coffee maker with thermal carafe.</p>
+            <div class="equipment-tips">
+              <p class="equipment-tips-title">Usage Tips</p>
+              <ul>
+                <li>Use filtered water</li>
+                <li>Clean pot daily</li>
+              </ul>
+            </div>
+            <div class="product-meta">
+              <span class="product-price">$129.00</span>
+              <button class="add-to-cart" data-id="equip-14" data-name="Automatic Drip Machine" data-price="129.00"
+                data-type="equipment" aria-label="Add to cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Equipment 15: Pour-Over Stand -->
+        <article class="product-card fade-in stagger-1" data-category="accessories" data-name="Wooden Pour-Over Stand">
+          <div class="product-image">
+            <img src="Images/stand.jpg" alt="Pour-Over Stand">
+          </div>
+          <div class="product-content">
+            <span class="product-category">Accessories</span>
+            <h3 class="product-name">Wooden Pour-Over Stand</h3>
+            <p class="product-description">Hand-crafted acacia wood stand for Chemex or V60 drippers.</p>
+            <div class="equipment-tips">
+              <p class="equipment-tips-title">Usage Tips</p>
+              <ul>
+                <li>Hand wash only</li>
+                <li>Oil wood occasionally</li>
+              </ul>
+            </div>
+            <div class="product-meta">
+              <span class="product-price">$60.00</span>
+              <button class="add-to-cart" data-id="equip-15" data-name="Wooden Pour-Over Stand" data-price="60.00"
+                data-type="equipment" aria-label="Add to cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="Images/icon.jpg" alt="Bean Boutique logo" class="nav-logo-image">
+            <span class="nav-logo-text">Bean Boutique</span>
+          </a>
+          <p>Crafting exceptional coffee experiences since 2015. Every bean tells a story of quality, sustainability,
+            and passion.</p>
+          <div class="social-links footer-social-links">
+            <a href="https://www.instagram.com" class="social-link" aria-label="Instagram"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com" class="social-link" aria-label="Twitter"><i
+                class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com" class="social-link" aria-label="Facebook"><i
+                class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com" class="social-link" aria-label="YouTube"><i
+                class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="coffee.html" class="footer-link">Coffee Selection</a>
+            <a href="equipment.html" class="footer-link">Brewing Equipment</a>
+            <a href="events.html" class="footer-link">Events & Workshops</a>
+            <a href="offers.html" class="footer-link">Special Offers</a>
+          </div>
+        </div>
+
+        <!-- Support -->
+        <div>
+          <h4 class="footer-title">Support</h4>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Shipping Info</a>
+            <a href="#" class="footer-link">Returns Policy</a>
+            <a href="#" class="footer-link">FAQ</a>
+            <a href="#" class="footer-link">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="footer-title">Contact</h4>
+          <div class="footer-links">
+            <span class="footer-link">U Wisara Rd</span>
+            <span class="footer-link">Yangon, Myanmar</span>
+            <span class="footer-link">(+95) 9444555614</span>
+            <a href="mailto:hello@beanboutique.com" class="footer-link">hello@beanboutique.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>2026 Bean Boutique. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

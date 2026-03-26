@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Explore our curated selection of single-origin coffees and signature blends. Find your perfect roast at Bean Boutique.">
+  <title>Coffee Selection | Bean Boutique</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="Images/icon.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="nav scrolled" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <img src="Images/icon.jpg" alt="Bean Boutique logo" class="nav-logo-image">
+          <span class="nav-logo-text">Bean Boutique</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="coffee.html" class="nav-link active">Coffee</a>
+          <a href="equipment.html" class="nav-link">Equipment</a>
+          <a href="events.html" class="nav-link">Events</a>
+          <a href="offers.html" class="nav-link">Offers</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="cart.html" class="cart-btn" aria-label="Shopping Cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count" id="cart-count">0</span>
+          </a>
+          <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="coffee.html" class="mobile-nav-link active">Coffee Selection</a>
+      <a href="equipment.html" class="mobile-nav-link">Brewing Equipment</a>
+      <a href="events.html" class="mobile-nav-link">Events & Workshops</a>
+      <a href="offers.html" class="mobile-nav-link">Special Offers</a>
+      <a href="cart.html" class="mobile-nav-link">Shopping Cart</a>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header-content fade-in">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Coffee Selection</span>
+        </div>
+        <h1>Our Coffee Collection</h1>
+        <p class="lead">From light and floral to dark and bold, discover your perfect cup from our curated selection of
+          single-origin beans and signature blends.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="section">
+    <div class="container">
+      <!-- Search and Filter -->
+      <div class="fade-in">
+        <div class="search-container">
+          <input type="text" class="search-input" id="coffee-search"
+            placeholder="Search coffee by name, origin, or flavor notes...">
+          <button class="search-btn" aria-label="Search">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+
+        <div class="filter-pills">
+          <button class="filter-pill active" data-filter="all">All Coffees</button>
+          <button class="filter-pill" data-filter="light">Light Roast</button>
+          <button class="filter-pill" data-filter="medium">Medium Roast</button>
+          <button class="filter-pill" data-filter="dark">Dark Roast</button>
+          <button class="filter-pill" data-filter="single-origin">Single Origin</button>
+        </div>
+      </div>
+
+      <!-- Coffee Products Grid -->
+      <div class="grid grid-3" id="coffee-grid">
+
+        <!-- Product 1: Morning Ritual -->
+        <article class="product-card fade-in stagger-1" data-category="medium" data-name="Morning Ritual Blend">
+          <div class="product-image">
+            <img src="Images/ritual.png" alt="Morning Ritual Blend coffee beans">
+            <span class="product-badge">Best Seller</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Medium Roast</span>
+            <h3 class="product-name">Morning Ritual Blend</h3>
+            <div class="tasting-notes">
+              <span class="tasting-note"><i class="fas fa-circle"></i>Chocolate</span>
+              <span class="tasting-note"><i class="fas fa-circle"></i>Almond</span>
+              <span class="tasting-note"><i class="fas fa-circle"></i>Caramel</span>
+            </div>
+            <p class="product-description">Our signature blend crafted for the perfect morning cup. Smooth, balanced,
+              and endlessly drinkable with notes of chocolate and toasted almond.</p>
+            <p class="product-recommendation"><strong>Recommended:</strong> Drip brew or French press</p>
+            <div class="product-meta">
+              <span class="product-price">$18.00 <span class="product-price-unit">/ 12oz</span></span>
+              <button class="add-to-cart" data-id="coffee-1" data-name="Morning Ritual Blend" data-price="18.00"
+                data-type="coffee" aria-label="Add Morning Ritual to cart">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 2: Ethiopian Yirgacheffe -->
+        <article class="product-card fade-in stagger-2" data-category="light single-origin"
+          data-name="Ethiopian Yirgacheffe">
+          <div class="product-image">
+            <img src="Images/yirgacheffe.jpg" alt="Ethiopian Yirgacheffe coffee beans">
+            <span class="product-badge">New</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Light Roast - Single Origin</span>
+            <h3 class="product-name">Ethiopian Yirgacheffe</h3>
+            <div class="tasting-notes">
+              <span class="tasting-note"><i class="fas fa-circle"></i>Blueberry</span>
+              <span class="tasting-note"><i class="fas fa-circle"></i>Citrus</span>
+              <span class="tasting-note"><i class="fas fa-circle"></i>Floral</span>
+            </div>
+            <p class="product-description">From the birthplace of coffee, this exquisite single-origin offers bright,
+              wine-like acidity with distinctive blueberry and citrus notes.</p>
+            <p class="product-recommendation"><strong>Recommended:</strong> Pour-over or Chemex</p>
+            <div class="product-meta">
+              <span class="product-price">$22.00 <span class="product-price-unit">/ 12oz</span></span>
+              <button class="add-to-cart" data-id="coffee-2" data-name="Ethiopian Yirgacheffe" data-price="22.00"
+                data-type="coffee" aria-label="Add Ethiopian Yirgacheffe to cart">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 3: Midnight Reserve -->
+        <article class="product-card fade-in stagger-3" data-category="dark" data-name="Midnight Reserve">
+          <div class="product-image">
+            <img src="Images/midnight.jpg" alt="Midnight Reserve dark roast coffee">
+          </div>
+          <div class="product-content">
+            <span class="product-category">Dark Roast</span>
+            <h3 class="product-name">Midnight Reserve</h3>
+            <div class="tasting-notes">
+              <span class="tasting-note"><i class="fas fa-circle"></i>Dark Cocoa</span>
+              <span class="tasting-note"><i class="fas fa-circle"></i>Smoky</span>
+              <span class="tasting-note"><i class="fas fa-circle"></i>Molasses</span>
+            </div>
+            <p class="product-description">Our darkest roast, bold and intense. Deep cocoa flavors with smoky undertones
+              and a heavy body that stands up to cream.</p>
+            <p class="product-recommendation"><strong>Recommended:</strong> Espresso or French press</p>
+            <div class="product-meta">
+              <span class="product-price">$24.00 <span class="product-price-unit">/ 12oz</span></span>
+              <button class="add-to-cart" data-id="coffee-3" data-name="Midnight Reserve" data-price="24.00"
+                data-type="coffee" aria-label="Add Midnight Reserve to cart">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 4: Colombian Supreme -->
+        <article class="product-card fade-in stagger-4" data-category="medium single-origin"
+          data-name="Colombian Supreme">
+          <div class="product-image">
+            <img src="Images/colombian.jpg" alt="Colombian Supreme coffee beans">
+          </div>
+          <div class="product-content">
+            <span class="product-category">Medium Roast - Single Origin</span>
+            <h3 class="product-name">Colombian Supreme</h3>
+            <div class="tasting-notes">
+              <span class="tasting-note"><i class="fas fa-circle"></i>Caramel</span>
+              <span class="tasting-note"><i class="fas fa-circle"></i>Nuts</span>
+              <span class="tasting-note"><i class="fas fa-circle"></i>Brown Sugar</span>
+            </div>
+            <p class="product-description">Rich and full-bodied with caramel sweetness and a nutty finish. A classic
+              Colombian profile that never disappoints.</p>
+            <p class="product-recommendation"><strong>Recommended:</strong> Drip brew or AeroPress</p>
+            <div class="product-meta">
+              <span class="product-price">$20.00 <span class="product-price-unit">/ 12oz</span></span>
+              <button class="add-to-cart" data-id="coffee-4" data-name="Colombian Supreme" data-price="20.00"
+                data-type="coffee" aria-label="Add Colombian Supreme to cart">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 5: Sumatra Mandheling -->
+        <article class="product-card fade-in stagger-5" data-category="dark single-origin"
+          data-name="Sumatra Mandheling">
+          <div class="product-image">
+            <img src="Images/sumatra.jpg" alt="Sumatra Mandheling coffee beans">
+          </div>
+          <div class="product-content">
+            <span class="product-category">Dark Roast - Single Origin</span>
+            <h3 class="product-name">Sumatra Mandheling</h3>
+            <div class="tasting-notes">
+              <span class="tasting-note"><i class="fas fa-circle"></i>Earthy</span>
+              <span class="tasting-note"><i class="fas fa-circle"></i>Cedar</span>
+              <span class="tasting-note"><i class="fas fa-circle"></i>Dark Chocolate</span>
+            </div>
+            <p class="product-description">Complex and earthy with a heavy body. Notes of cedar and dark chocolate with
+              a lingering herbal finish unique to Indonesian coffee.</p>
+            <p class="product-recommendation"><strong>Recommended:</strong> French press or Cold Brew</p>
+            <div class="product-meta">
+              <span class="product-price">$23.00 <span class="product-price-unit">/ 12oz</span></span>
+              <button class="add-to-cart" data-id="coffee-5" data-name="Sumatra Mandheling" data-price="23.00"
+                data-type="coffee" aria-label="Add Sumatra Mandheling to cart">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 6: Guatemala Antigua -->
+        <article class="product-card fade-in stagger-1" data-category="medium single-origin"
+          data-name="Guatemala Antigua">
+          <div class="product-image">
+            <img src="Images/guatemala.jpg" alt="Guatemala Antigua coffee beans">
+            <span class="product-badge">Limited</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Medium Roast - Single Origin</span>
+            <h3 class="product-name">Guatemala Antigua</h3>
+            <div class="tasting-notes">
+              <span class="tasting-note"><i class="fas fa-circle"></i>Cocoa</span>
+              <span class="tasting-note"><i class="fas fa-circle"></i>Spice</span>
+              <span class="tasting-note"><i class="fas fa-circle"></i>Brown Sugar</span>
+            </div>
+            <p class="product-description">Elegant and spicy with a hint of cocoa. This volcanic soil-grown coffee
+              offers a unique complexity and smooth finish.</p>
+            <p class="product-recommendation"><strong>Recommended:</strong> Pour-over or Siphon</p>
+            <div class="product-meta">
+              <span class="product-price">$21.00 <span class="product-price-unit">/ 12oz</span></span>
+              <button class="add-to-cart" data-id="coffee-6" data-name="Guatemala Antigua" data-price="21.00"
+                data-type="coffee" aria-label="Add Guatemala Antigua to cart">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 7: Costa Rica Tarrazu -->
+        <article class="product-card fade-in stagger-2" data-category="medium single-origin"
+          data-name="Costa Rica Tarrazu">
+          <div class="product-image">
+            <img src="Images/tarrazu.jpg" alt="Costa Rica Tarrazu">
+          </div>
+          <div class="product-content">
+            <span class="product-category">Medium Roast - Single Origin</span>
+            <h3 class="product-name">Costa Rica Tarrazu</h3>
+            <div class="tasting-notes">
+              <span class="tasting-note"><i class="fas fa-circle"></i>Honey</span>
+              <span class="tasting-note"><i class="fas fa-circle"></i>Apple</span>
+            </div>
+            <p class="product-description">Clean and crisp with bright acidity. Notes of honey and green apple.</p>
+            <p class="product-recommendation"><strong>Recommended:</strong> Drip or Siphon</p>
+            <div class="product-meta">
+              <span class="product-price">$21.00</span>
+              <button class="add-to-cart" data-id="coffee-7" data-name="Costa Rica Tarrazu" data-price="21.00"
+                data-type="coffee" aria-label="Add to cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 8: Brazil Santos -->
+        <article class="product-card fade-in stagger-3" data-category="medium single-origin" data-name="Brazil Santos">
+          <div class="product-image">
+            <img src="Images/santos.jpg" alt="Brazil Santos">
+          </div>
+          <div class="product-content">
+            <span class="product-category">Medium Roast - Single Origin</span>
+            <h3 class="product-name">Brazil Santos</h3>
+            <div class="tasting-notes">
+              <span class="tasting-note"><i class="fas fa-circle"></i>Peanut</span>
+              <span class="tasting-note"><i class="fas fa-circle"></i>Milk Chocolate</span>
+            </div>
+            <p class="product-description">Classic Brazilian profile. Smooth, low-acid, with distinct nutty notes.</p>
+            <p class="product-recommendation"><strong>Recommended:</strong> Espresso base</p>
+            <div class="product-meta">
+              <span class="product-price">$19.00</span>
+              <button class="add-to-cart" data-id="coffee-8" data-name="Brazil Santos" data-price="19.00"
+                data-type="coffee" aria-label="Add to cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 9: Papua New Guinea -->
+        <article class="product-card fade-in stagger-4" data-category="medium single-origin"
+          data-name="Papua New Guinea">
+          <div class="product-image">
+            <img src="Images/guinea.jpg" alt="Papua New Guinea">
+          </div>
+          <div class="product-content">
+            <span class="product-category">Medium Roast - Single Origin</span>
+            <h3 class="product-name">Papua New Guinea</h3>
+            <div class="tasting-notes">
+              <span class="tasting-note"><i class="fas fa-circle"></i>Wood</span>
+              <span class="tasting-note"><i class="fas fa-circle"></i>Stone Fruit</span>
+            </div>
+            <p class="product-description">Wild and rustic with notes of wood and stone fruit. A unique profile.</p>
+            <p class="product-recommendation"><strong>Recommended:</strong> French Press</p>
+            <div class="product-meta">
+              <span class="product-price">$22.00</span>
+              <button class="add-to-cart" data-id="coffee-9" data-name="Papua New Guinea" data-price="22.00"
+                data-type="coffee" aria-label="Add to cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 10: House Decaf -->
+        <article class="product-card fade-in stagger-5" data-category="medium" data-name="House Decaf Blend">
+          <div class="product-image">
+            <img src="Images/decaf.jpg" alt="House Decaf Blend">
+          </div>
+          <div class="product-content">
+            <span class="product-category">Medium Roast</span>
+            <h3 class="product-name">House Decaf Blend</h3>
+            <div class="tasting-notes">
+              <span class="tasting-note"><i class="fas fa-circle"></i>Chocolate</span>
+              <span class="tasting-note"><i class="fas fa-circle"></i>Smooth</span>
+            </div>
+            <p class="product-description">Swiss Water Processed. All the flavor without the caffeine.</p>
+            <p class="product-recommendation"><strong>Recommended:</strong> Any method</p>
+            <div class="product-meta">
+              <span class="product-price">$18.00</span>
+              <button class="add-to-cart" data-id="coffee-10" data-name="House Decaf Blend" data-price="18.00"
+                data-type="coffee" aria-label="Add to cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 11: Honduras Copan -->
+        <article class="product-card fade-in stagger-1" data-category="light single-origin" data-name="Honduras Copan">
+          <div class="product-image">
+            <img src="Images/copan.jpg" alt="Honduras Copan">
+          </div>
+          <div class="product-content">
+            <span class="product-category">Light Roast - Single Origin</span>
+            <h3 class="product-name">Honduras Copan</h3>
+            <div class="tasting-notes">
+              <span class="tasting-note"><i class="fas fa-circle"></i>Brown Sugar</span>
+              <span class="tasting-note"><i class="fas fa-circle"></i>Red Apple</span>
+            </div>
+            <p class="product-description">Sweet and balanced with a syrupy body and crisp apple finish.</p>
+            <p class="product-recommendation"><strong>Recommended:</strong> Pour-over</p>
+            <div class="product-meta">
+              <span class="product-price">$20.00</span>
+              <button class="add-to-cart" data-id="coffee-11" data-name="Honduras Copan" data-price="20.00"
+                data-type="coffee" aria-label="Add to cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 12: Peru Organic -->
+        <article class="product-card fade-in stagger-2" data-category="medium single-origin" data-name="Peru Organic">
+          <div class="product-image">
+            <img src="Images/peru.jpg" alt="Peru Organic">
+          </div>
+          <div class="product-content">
+            <span class="product-category">Medium Roast - Single Origin</span>
+            <h3 class="product-name">Peru Organic</h3>
+            <div class="tasting-notes">
+              <span class="tasting-note"><i class="fas fa-circle"></i>Cocoa</span>
+              <span class="tasting-note"><i class="fas fa-circle"></i>Toasted Nut</span>
+            </div>
+            <p class="product-description">Certified organic. Mild and smooth with a gentle acidity.</p>
+            <p class="product-recommendation"><strong>Recommended:</strong> Cold Brew</p>
+            <div class="product-meta">
+              <span class="product-price">$21.00</span>
+              <button class="add-to-cart" data-id="coffee-12" data-name="Peru Organic" data-price="21.00"
+                data-type="coffee" aria-label="Add to cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 13: Uganda Bugisu -->
+        <article class="product-card fade-in stagger-3" data-category="dark single-origin" data-name="Uganda Bugisu">
+          <div class="product-image">
+            <img src="Images/bugisu.jpg" alt="Uganda Bugisu">
+          </div>
+          <div class="product-content">
+            <span class="product-category">Dark Roast - Single Origin</span>
+            <h3 class="product-name">Uganda Bugisu</h3>
+            <div class="tasting-notes">
+              <span class="tasting-note"><i class="fas fa-circle"></i>Wine</span>
+              <span class="tasting-note"><i class="fas fa-circle"></i>Dark Fruit</span>
+            </div>
+            <p class="product-description">Bold and winey with hints of dark fruit. High quality Robusta blend.</p>
+            <p class="product-recommendation"><strong>Recommended:</strong> Espresso</p>
+            <div class="product-meta">
+              <span class="product-price">$20.00</span>
+              <button class="add-to-cart" data-id="coffee-13" data-name="Uganda Bugisu" data-price="20.00"
+                data-type="coffee" aria-label="Add to cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 14: Mexico Chiapas -->
+        <article class="product-card fade-in stagger-4" data-category="light single-origin" data-name="Mexico Chiapas">
+          <div class="product-image">
+            <img src="Images/mexico.jpg" alt="Mexico Chiapas">
+          </div>
+          <div class="product-content">
+            <span class="product-category">Light Roast - Single Origin</span>
+            <h3 class="product-name">Mexico Chiapas</h3>
+            <div class="tasting-notes">
+              <span class="tasting-note"><i class="fas fa-circle"></i>Pear</span>
+              <span class="tasting-note"><i class="fas fa-circle"></i>Lemon</span>
+            </div>
+            <p class="product-description">Light and delicate with a sweet finish. Perfect for a gentle morning start.
+            </p>
+            <p class="product-recommendation"><strong>Recommended:</strong> Drip brew</p>
+            <div class="product-meta">
+              <span class="product-price">$19.00</span>
+              <button class="add-to-cart" data-id="coffee-14" data-name="Mexico Chiapas" data-price="19.00"
+                data-type="coffee" aria-label="Add to cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 15: Jamaica Blue Mountain -->
+        <article class="product-card fade-in stagger-5" data-category="light single-origin"
+          data-name="Jamaica Blue Mountain">
+          <div class="product-image">
+            <img src="Images/jamaica.jpg" alt="Jamaica Blue Mountain">
+            <span class="product-badge">Premium</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Light Roast - Single Origin</span>
+            <h3 class="product-name">Jamaica Blue Mountain</h3>
+            <div class="tasting-notes">
+              <span class="tasting-note"><i class="fas fa-circle"></i>Cream</span>
+              <span class="tasting-note"><i class="fas fa-circle"></i>Cocoa</span>
+            </div>
+            <p class="product-description">One of the world's most sought-after coffees. Incredibly smooth and refined.
+            </p>
+            <p class="product-recommendation"><strong>Recommended:</strong> Pour-over or Vacuum Pot</p>
+            <div class="product-meta">
+              <span class="product-price">$55.00</span>
+              <button class="add-to-cart" data-id="coffee-15" data-name="Jamaica Blue Mountain" data-price="55.00"
+                data-type="coffee" aria-label="Add to cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="Images/icon.jpg" alt="Bean Boutique logo" class="nav-logo-image">
+            <span class="nav-logo-text">Bean Boutique</span>
+          </a>
+          <p>Crafting exceptional coffee experiences since 2015. Every bean tells a story of quality, sustainability,
+            and passion.</p>
+          <div class="social-links footer-social-links">
+            <a href="https://www.instagram.com" class="social-link" aria-label="Instagram"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com" class="social-link" aria-label="Twitter"><i
+                class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com" class="social-link" aria-label="Facebook"><i
+                class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com" class="social-link" aria-label="YouTube"><i
+                class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="coffee.html" class="footer-link">Coffee Selection</a>
+            <a href="equipment.html" class="footer-link">Brewing Equipment</a>
+            <a href="events.html" class="footer-link">Events & Workshops</a>
+            <a href="offers.html" class="footer-link">Special Offers</a>
+          </div>
+        </div>
+
+        <!-- Support -->
+        <div>
+          <h4 class="footer-title">Support</h4>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Shipping Info</a>
+            <a href="#" class="footer-link">Returns Policy</a>
+            <a href="#" class="footer-link">FAQ</a>
+            <a href="#" class="footer-link">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="footer-title">Contact</h4>
+          <div class="footer-links">
+            <span class="footer-link">U Wisara Rd</span>
+            <span class="footer-link">Yangon, Myanmar</span>
+            <span class="footer-link">(+95) 9444555614</span>
+            <a href="mailto:hello@beanboutique.com" class="footer-link">hello@beanboutique.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>2026 Bean Boutique. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

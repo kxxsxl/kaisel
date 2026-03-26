@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your shopping cart at Bean Boutique. Review your coffee and equipment selections.">
+  <title>Shopping Cart | Bean Boutique</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="Images/icon.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="nav scrolled" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <img src="Images/icon.jpg" alt="Bean Boutique logo" class="nav-logo-image">
+          <span class="nav-logo-text">Bean Boutique</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="coffee.html" class="nav-link">Coffee</a>
+          <a href="equipment.html" class="nav-link">Equipment</a>
+          <a href="events.html" class="nav-link">Events</a>
+          <a href="offers.html" class="nav-link">Offers</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="cart.html" class="cart-btn active" aria-label="Shopping Cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count" id="cart-count">0</span>
+          </a>
+          <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="coffee.html" class="mobile-nav-link">Coffee Selection</a>
+      <a href="equipment.html" class="mobile-nav-link">Brewing Equipment</a>
+      <a href="events.html" class="mobile-nav-link">Events & Workshops</a>
+      <a href="offers.html" class="mobile-nav-link">Special Offers</a>
+      <a href="cart.html" class="mobile-nav-link active">Shopping Cart</a>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header-content fade-in">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Shopping Cart</span>
+        </div>
+        <h1>Your Cart</h1>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="section">
+    <div class="container">
+      <div class="grid grid-2 grid-cart-layout">
+
+        <!-- Cart Items Column -->
+        <div class="fade-in">
+          <div id="cart-items-container">
+            <!-- Cart items will be rendered here by JavaScript -->
+            <div class="cart-empty">
+              <div class="cart-empty-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <h3 class="cart-empty-title">Your cart is empty</h3>
+              <p class="cart-empty-text">Looks like you haven't added any items yet.</p>
+              <a href="coffee.html" class="btn btn-primary">Browse Coffee</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cart Summary Column -->
+        <div class="fade-in-right">
+          <div class="cart-summary cart-summary-sticky" id="cart-summary">
+            <h3 class="cart-summary-title">Order Summary</h3>
+
+            <!-- Promo Code Section -->
+            <div class="promo-section">
+              <label for="promo-input" class="promo-label">Promo Code</label>
+              <div class="input-group">
+                <input type="text" id="promo-input" class="form-input" placeholder="Enter code">
+                <button id="apply-promo-btn" class="btn btn-secondary btn-apply">Apply</button>
+              </div>
+              <p id="promo-message" class="promo-message"></p>
+            </div>
+
+            <div class="cart-summary-row">
+              <span>Subtotal</span>
+              <span id="cart-subtotal">$0.00</span>
+            </div>
+
+            <!-- Discount Row -->
+            <div class="cart-summary-row discount-row" id="discount-row">
+              <span>Discount (<span id="promo-code-display"></span>)</span>
+              <span id="cart-discount">-$0.00</span>
+            </div>
+
+            <div class="cart-summary-row">
+              <span>Shipping</span>
+              <span>Calculated at checkout</span>
+            </div>
+            <div class="cart-summary-row">
+              <span>Tax (est.)</span>
+              <span id="cart-tax">$0.00</span>
+            </div>
+
+            <div class="cart-summary-row total">
+              <span>Total</span>
+              <span id="cart-total">$0.00</span>
+            </div>
+
+            <button class="btn btn-primary btn-block" id="checkout-btn">
+              Proceed to Checkout
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="Images/icon.jpg" alt="Bean Boutique logo" class="nav-logo-image">
+            <span class="nav-logo-text">Bean Boutique</span>
+          </a>
+          <p>Crafting exceptional coffee experiences since 2015. Every bean tells a story of quality, sustainability,
+            and passion.</p>
+          <div class="social-links footer-social-links">
+            <a href="https://www.instagram.com" class="social-link" aria-label="Instagram"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com" class="social-link" aria-label="Twitter"><i
+                class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com" class="social-link" aria-label="Facebook"><i
+                class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com" class="social-link" aria-label="YouTube"><i
+                class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="coffee.html" class="footer-link">Coffee Selection</a>
+            <a href="equipment.html" class="footer-link">Brewing Equipment</a>
+            <a href="events.html" class="footer-link">Events & Workshops</a>
+            <a href="offers.html" class="footer-link">Special Offers</a>
+          </div>
+        </div>
+
+        <!-- Support -->
+        <div>
+          <h4 class="footer-title">Support</h4>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Shipping Info</a>
+            <a href="#" class="footer-link">Returns Policy</a>
+            <a href="#" class="footer-link">FAQ</a>
+            <a href="#" class="footer-link">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="footer-title">Contact</h4>
+          <div class="footer-links">
+            <span class="footer-link">U Wisara Rd</span>
+            <span class="footer-link">Yangon, Myanmar</span>
+            <span class="footer-link">(+95) 9444555614</span>
+            <a href="mailto:hello@beanboutique.com" class="footer-link">hello@beanboutique.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>2026 Bean Boutique. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
